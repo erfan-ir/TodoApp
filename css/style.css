@@ -1,0 +1,249 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Poplis";
+    src: url(../fonts/Poppins-Light.ttf);
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    font-family: "Poplis";
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+button {
+    padding: 15px;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    background: transparent;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.1), -3px -3px 10px rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+button:hover {
+    box-shadow: 3px 3px 50px rgba(255, 255, 255, 0.6), -3px -3px 50px rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px 0 10px;
+}
+
+header {
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    align-items: center;
+    box-shadow: 3px 3px 100px rgba(255, 255, 255, 0.5);
+}
+
+.main-header {
+    width: 100%;
+}
+
+input {
+    margin: 0 10px;
+    width: 100%;
+    background: transparent;
+    box-shadow: 3px 3px 10px rgba(255, 255, 255, 0.3), -3px -3px 10px rgba(255, 255, 255, 0.3);
+    border: none;
+    color: #fff;
+    outline: none;
+    padding: 10px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+
+
+
+.head-inputs {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 10px;
+}
+
+
+.head-title h1 {
+    background: text linear-gradient(to left, rgb(255, 255, 255), rgb(56, 0, 169), rgb(0, 152, 0), rgb(203, 44, 44));
+    animation: animated 5s linear infinite;
+    display: inline;
+    color: transparent;
+}
+
+@keyframes animated {
+    to {
+        background-position-x: 200px;
+    }
+}
+
+@keyframes err {
+    to {
+        background-position-x: 500px;
+    }
+}
+
+.head-title h1:hover {
+    color: rgb(45, 255, 45);
+    transition: 1s;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.todo-input::placeholder {
+    color: #fff;
+}
+
+.todo-input:hover {
+    box-shadow: 3px 3px 50px rgba(255, 255, 255, 0.6), -3px -3px 50px rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+}
+
+.date-input:hover {
+    box-shadow: 3px 3px 50px rgba(255, 255, 255, 0.6), -3px -3px 50px rgba(255, 255, 255, 0.6);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+.btn-add {
+    height: 100%;
+    background-color: transparent;
+    box-shadow: 3px 3px 50px rgba(255, 255, 255, 0.3), -3px -3px 50px rgba(255, 255, 255, 0.3);
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    color: #fff;
+}
+
+.btn-add:hover {
+    color: rgb(185, 255, 80);
+    box-shadow: 5px 5px 5000px rgb(55, 255, 0), -5px -5px 5000px rgb(72, 255, 0);
+}
+
+.todo-title {
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.225);
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 5px;
+}
+
+.todo {
+    padding: 10px;
+    box-shadow: 3px 3px 100px rgba(255, 255, 255, 0.3), -3px -3px 50px rgba(255, 255, 255, 0.3);
+    ;
+}
+
+.todo p {
+    text-align: center;
+}
+
+.todo p:hover {
+    color: rgba(255, 255, 255, 1);
+    transition: 0.5s;
+}
+
+.delete-todos:hover {
+    background-clip: text;
+    box-shadow: 5px 5px 5000px rgba(255, 0, 0, 0.506), -5px -5px 5000px rgba(255, 32, 32, 0.9);
+    color: red;
+}
+
+
+.btn-edit {
+    color: yellow;
+}
+
+.btn-edit:hover {
+    box-shadow: 3px 3px 50px rgba(255, 242, 1, 0.6), -3px -3px 50px rgba(242, 255, 0, 0.6);
+}
+
+.btn-do {
+    color: rgb(0, 190, 41);
+}
+
+.btn-do:hover {
+    box-shadow: 3px 3px 50px rgba(0, 255, 21, 0.6), -3px -3px 50px rgba(4, 255, 0, 0.6);
+    ;
+}
+
+.btn-del {
+    color: rgb(254, 75, 75);
+}
+
+.btn-del:hover {
+    box-shadow: 3px 3px 50px rgba(255, 0, 0, 0.6), -3px -3px 50px rgba(255, 0, 0, 0.6);
+    ;
+}
+
+table {
+    width: 100%;
+    border-radius: 8px;
+    backdrop-filter: blur(5px);
+    box-shadow: 3px 3px 100px rgba(255, 255, 255, 0.5);
+}
+
+
+thead th {
+    animation: animated 5s linear infinite;
+    background: text linear-gradient(to left, rgb(1, 241, 1), rgb(255, 208, 1), rgba(0, 255, 255, 0.92));
+    padding: 10px;
+}
+
+tbody td {
+    text-align: center;
+    padding: 5px 10px;
+}
+
+#alert-message {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.alert {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+.alert-success {
+    background: text linear-gradient(to left, rgb(255, 255, 255), rgb(3, 223, 252), rgb(0, 255, 0), rgb(255, 255, 255));
+    font-weight: 900;
+    font-size: 2rem;
+    animation: err 1s;
+    color: transparent;
+}
+
+.alert-error {
+    background: text linear-gradient(to left, rgb(255, 255, 255), rgb(248, 0, 0), rgb(255, 0, 0), rgb(255, 255, 255));
+    font-weight: 900;
+    font-size: 2rem;
+    animation: err 1s;
+    color: transparent;
+}
+
+#btn-edit {
+    display: none;
+}
